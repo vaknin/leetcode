@@ -1,14 +1,10 @@
-#![allow(dead_code, unused_variables, clippy::ptr_arg, clippy::manual_memcpy)]
+// #![allow(dead_code, unused_variables, clippy::ptr_arg, clippy::manual_memcpy)]
 
-use crate::e88::merge;
-
-mod e88;
+// mod e26;
 
 fn main() {
-    let mut nums1 = vec![2,0];
-    let mut nums2 = vec![1];
-    let m = 1;
-    let n = 1;
-    merge(&mut nums1, m, &mut nums2, n);
-    println!("{nums1:?}");
+    // let mut nums = vec![1,1,2];
+    // let res = remove_duplicates(&mut nums);
+    // println!("{res}");
+    // println!("{nums:?}");
 }
