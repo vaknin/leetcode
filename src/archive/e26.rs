@@ -6,15 +6,16 @@ pub fn remove_duplicates(nums: &mut Vec<i32>) -> i32 {
     }
 
     let mut i = 1;
+    let mut u = 0;
     while i < nums.len() {
-        let prev = nums[i- 1];
 
-        // Duplicate
-        if nums[i] == prev {
-            nums.remove(i);
-            i -= 1;
+        // Not duplicate: place num at 'u'
+        if nums[i - 1] != nums[i] {
+            nums[u] = nums[i - 1];
+            u+=1;
         }
         i+=1;
     }
-    i as i32
+    nums[u] = nums[i - 1];
+    (u+1) as i32
 }

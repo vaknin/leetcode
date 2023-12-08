@@ -1,10 +1,12 @@
-// #![allow(dead_code, unused_variables, clippy::ptr_arg, clippy::manual_memcpy)]
+#![allow(dead_code, unused_variables, clippy::ptr_arg, clippy::manual_memcpy, unused_mut, clippy::collapsible_if)]
 
-// mod e26;
+use e242::is_anagram;
 
+mod e242;
 fn main() {
-    // let mut nums = vec![1,1,2];
-    // let res = remove_duplicates(&mut nums);
-    // println!("{res}");
+    let s = "car".to_string();
+    let t = "rac".to_string();
+    let res = is_anagram(s, t);
+    println!("{res}");
     // println!("{nums:?}");
 }
